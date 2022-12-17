@@ -120,6 +120,94 @@ h6 {
   margin-left: 300px;
 }
 
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ button.learn-more {
+  width: 12rem;
+  height: auto;
+ }
+ 
+ button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background-image : linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border-radius: 1.625rem;
+ }
+ 
+ button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
+
 @media (max-width: 1199px) {
   #header {
     left: -300px;
@@ -268,7 +356,8 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid 
+  border-bottom: 3px solid;
+  border-bottom: 3px solid #149ddd;
 }
 
 @media (min-width: 1024px) {
@@ -320,7 +409,8 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background-image : linear-gradient(144deg,#AF40FF, #5B42F3 30%,#00DDEB);
+
   bottom: 0;
   left: 0;
 }
@@ -365,6 +455,10 @@ section {
   align-items: center;
 }
 
+.about .content ul li i{
+  font-size: 20px;
+  color : #173b6c;
+}
 .about .content ul strong {
   margin-right: 10px;
 }
@@ -525,14 +619,10 @@ section {
   line-height: 1;
   text-transform: uppercase;
   color: #272829;
-  margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
-}
+
 
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -562,10 +652,7 @@ section {
  cursor: pointer;
  transition: all .3s;
 }
-.portfolio #portfolio-flters li button:hover, 
-.portfolio #portfolio-flters li button.filter-active {
-  background-image : linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-}
+
 
 .portfolio button span {
  background-color: #f5f8fd;
@@ -577,11 +664,8 @@ section {
 }
 
 .portfolio button:hover span {
+ color: white;
  background: none;
-}
-
-.portfolio button:active {
- transform: scale(0.9);
 }
 
 .portfolio .portfolio-wrap {
@@ -603,7 +687,7 @@ section {
   width: 40%;
   border-radius: 1rem;
   border: none;
-  background-color: #272829;
+  background-color:#008bf8;
   color: #fff;
   font-size: 1rem;
   padding: .4rem 1rem;
@@ -613,6 +697,11 @@ section {
   opacity: 0;
   transition: 0.3s ease-out;
   text-align: center;
+ }
+
+ .portfolio-wrap-button:hover{
+    color: #fff;
+
  }
 
  .portfolio .portfolio-wrap:hover{
@@ -715,11 +804,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #ffffff;
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #272829;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -777,7 +866,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background-image : linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
   color: #fff;
 }
 
