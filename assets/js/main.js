@@ -55,8 +55,8 @@
   onscroll(document, navbarlinksActive)
 
   /**
-   * Scrolls to an element with header offset
-   */
+    * Scrolls to an element with header offset
+    */
   const scrollto = (el) => {
     let elementPos = select(el).offsetTop
     window.scrollTo({
