@@ -612,7 +612,7 @@ section {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.portfolio #portfolio-filters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -622,7 +622,7 @@ section {
   padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.portfolio #portfolio-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -634,9 +634,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-
-
-.portfolio #portfolio-flters li:last-child {
+.portfolio #portfolio-filters li:last-child {
   margin-right: 0;
 }
 
@@ -675,7 +673,9 @@ section {
   transition: 300ms;
 }
 
-.portfolio button:hover span {
+
+.portfolio button:hover span,
+.portfolio button:focus span {
   color: white;
   background: none;
 }
