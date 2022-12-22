@@ -3,14 +3,21 @@ body {
   color: #272829;
 }
 
-a {
-  color: #149ddd;
+a:link {
+  color: #173b6c;
   text-decoration: none;
+}
+
+a:visited {
+  color: blueviolet;
 }
 
 a:hover {
   color: #37b3ed;
-  text-decoration: none;
+}
+
+a:active {
+  color: red;
 }
 
 h1,
