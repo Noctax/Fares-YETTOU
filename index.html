@@ -52,8 +52,8 @@
     <header id="header">
       <div class="d-flex flex-column">
         <div class="profile">
-          <a href="index.html">
-            <img src="assets/img/profile-img.jpg" alt="profile_picture" class="img-fluid rounded-circle">
+          <a href="index.html" draggable="false" (dragstart)="false;" class="unselectable">
+            <img src="assets/img/profile-img.jpg" alt="profile_picture" class="img-fluid rounded-circle"draggable="false" (dragstart)="false;" class="unselectable">
           </a>
           <h1 class="text-light"><a href="index.html">Yettou Fares</a></h1>
           <div class="social-links mt-3 text-center">
@@ -116,7 +116,7 @@
 
           <div class="row">
             <div class="col-lg-4" data-aos="fade-right">
-              <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+              <img src="assets/img/img_About.png" class="img-fluid" alt="About me!" draggable="false" (dragstart)="false;" class="unselectable">
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
               <h3>Geologist &amp; geotechnical engineer.</h3>
@@ -431,13 +431,13 @@
               </ul>
             </div>
           </div>
-          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100" >
             <div class="col-lg-4 col-md-6 portfolio-item filter-Geology">
               <div class="portfolio-wrap">
                 <div class="portfolio-links">
                   <a href="assets/img/Certifications/Fares-Master.jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
-                    <img src="assets/img/Certifications/Fares-Master.jpg" class="img-fluid" alt="Master's Degree"></a>
+                    <img src="assets/img/Certifications/Fares-Master.jpg" class="img-fluid" alt="Master's Degree" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
               </div>
             </div>
@@ -448,7 +448,7 @@
                   <a href="assets/img/Certifications/Fares Licence.jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Fares Licence.jpg" class="img-fluid"
-                      alt="Bachelor's Degree"></a>
+                      alt="Bachelor's Degree" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
               </div>
             </div>
@@ -459,7 +459,7 @@
                   <a href="assets/img/Certifications/IWCF Level 1 Programme ( Well Control Awareness ).jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
                     <img src="assets/img/Certifications/IWCF Level 1 Programme ( Well Control Awareness ).jpg" class="img-fluid"
-                      alt="IWCF Level 1 Programme ( Well Control Awareness )"></a>
+                      alt="IWCF Level 1 Programme ( Well Control Awareness )" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
               </div>
             </div>
@@ -470,7 +470,7 @@
                   <a href="assets/img/Certifications/Learn To Drill Introduction to Drilling - English_Certificate of Completion.jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Learn To Drill Introduction to Drilling - English_Certificate of Completion.jpg" class="img-fluid"
-                      alt="Learn To Drill Introduction to Drilling"></a>
+                      alt="Learn To Drill Introduction to Drilling" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
               </div>
 
@@ -481,7 +481,7 @@
                   <a href="assets/img/Certifications/Learn To Drill Introduction to Well Servicing - English_Certificate of Completion.jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Learn To Drill Introduction to Well Servicing - English_Certificate of Completion.jpg" class="img-fluid"
-                      alt="Learn To Drill Introduction to Well Servicing"></a>
+                      alt="Learn To Drill Introduction to Well Servicing" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
               </div>
             </div>
@@ -492,7 +492,7 @@
                   <a href="assets/img/Certifications/ISG HSE Certificate Basic Safety 33.jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
                     <img src="assets/img/Certifications/ISG HSE Certificate Basic Safety 33.jpg" class="img-fluid"
-                      alt="ISG HSE Certificate Basic Safety 33"></a>
+                      alt="ISG HSE Certificate Basic Safety 33" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
               </div>
             </div>
@@ -503,7 +503,7 @@
                   <a href="assets/img/Certifications/Coursera GIS Toronto.jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Coursera GIS Toronto.jpg" class="img-fluid"
-                      alt="Coursera GIS specialisation"></a>
+                      alt="Coursera GIS specialisation" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
                 <a href="https://www.coursera.org/account/accomplishments/specialization/WN4N48LF3ELK"
                   class="portfolio-wrap-button" title="More details" target="_blank"
@@ -517,7 +517,7 @@
                   <a href="assets/img/Certifications/Coursera Fundamentals of GIS.jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Coursera Fundamentals of GIS.jpg" class="img-fluid"
-                      alt="Fundamentals of GIS"></a>
+                      alt="Fundamentals of GIS" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
                 <a href="https://www.coursera.org/account/accomplishments/verify/PZ2CM2E3NAPY"
                   class="portfolio-wrap-button" title="More details" target="_blank" rel="noopener noreferrer"><span
@@ -533,7 +533,8 @@
                     data-gallery="portfolioGallery" class="portfolio-lightbox">
                     <img
                       src="assets/img/Certifications/Coursera Remote Sensing Image Acquisition, Analysis and Applications.jpg"
-                      class="img-fluid" alt="Remote Sensing Image Acquisition, Analysis and Applications"></a>
+                      class="img-fluid" alt="Remote Sensing Image Acquisition, Analysis and Applications"
+                      draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
                 <a href="https://www.coursera.org/account/accomplishments/verify/B993LEEX6YT6"
                   class="portfolio-wrap-button" title="More details" target="_blank"
@@ -547,7 +548,7 @@
                   <a href="assets/img/Certifications/Coursera Machine Learning.jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Coursera Machine Learning.jpg" class="img-fluid"
-                      alt="Machine Learning"></a>
+                      alt="Machine Learning" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
                 <a href="https://www.coursera.org/account/accomplishments/specialization/25JNQ3W86K95"
                   class="portfolio-wrap-button" title="More details" target="_blank"
@@ -561,7 +562,7 @@
                   <a href="assets/img/Certifications/Coursera IBM Data Science Specialization.jpg"
                     data-gallery="portfolioGallery" class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Coursera IBM Data Science Specialization.jpg" class="img-fluid"
-                      alt="IBM Data Science Specialization"></a>
+                      alt="IBM Data Science Specialization" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
                 <a href="https://www.coursera.org/account/accomplishments/professional-cert/4EG386F3V855"
                   class="portfolio-wrap-button" title="More details" target="_blank"
@@ -575,7 +576,7 @@
                   <a href="assets/img/Certifications/Coursera IBM Data Analyst Specialization.jpg"
                     data-gallery="portfolioGallery" class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Coursera IBM Data Analyst Specialization.jpg" class="img-fluid"
-                      alt="IBM Data Analyst Specialization"></a>
+                      alt="IBM Data Analyst Specialization" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
                 <a href="https://www.coursera.org/account/accomplishments/professional-cert/H7GLTHLZERWK"
                   class="portfolio-wrap-button" title="More details" target="_blank"
@@ -589,7 +590,7 @@
                   <a href="assets/img/Certifications/Coursera Crash Course on Python.jpg"
                     data-gallery="portfolioGallery" class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Coursera Crash Course on Python.jpg" class="img-fluid"
-                      alt="Crash course on Python"></a>
+                      alt="Crash course on Python" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
                 <a href="https://www.coursera.org/account/accomplishments/verify/XU68YKWZNDUA"
                   class="portfolio-wrap-button" title="More details" target="_blank"
@@ -602,7 +603,7 @@
                   <a href="assets/img/Certifications/Coursera SQL for Data Science.jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Coursera SQL for Data Science.jpg" class="img-fluid"
-                      alt="SQL for Data Science"></a>
+                      alt="SQL for Data Science" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
                 <a href="https://www.coursera.org/account/accomplishments/verify/VE3L69EWAKRF"
                   class="portfolio-wrap-button" title="More details" target="_blank"
@@ -610,14 +611,13 @@
               </div>
             </div>
 
-
             <div class="col-lg-4 col-md-6 portfolio-item filter-Others">
               <div class="portfolio-wrap">
                 <div class="portfolio-links">
                   <a href="assets/img/Certifications/Coursera Autodesk AutoCAD.jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Coursera Autodesk AutoCAD.jpg" class="img-fluid"
-                      alt="Autodesk AutoCAD"></a>
+                      alt="Autodesk AutoCAD" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
                 <a href="https://www.coursera.org/account/accomplishments/verify/5D36Z937UG8Y"
                   class="portfolio-wrap-button" title="More details" target="_blank"
@@ -630,7 +630,7 @@
                   <a href="assets/img/Certifications/Coursera English for Career Development.jpg"
                     data-gallery="portfolioGallery" class="portfolio-lightbox">
                     <img src="assets/img/Certifications/Coursera English for Career Development.jpg" class="img-fluid"
-                      alt="English for Career Development"></a>
+                      alt="English for Career Development" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
                 <a href="https://www.coursera.org/account/accomplishments/verify/483AC8SYQHHT"
                   class="portfolio-wrap-button" title="More details" target="_blank"
@@ -643,7 +643,7 @@
                   <a href="assets/img/Certifications/EF SET Certificate 01.jpg" data-gallery="portfolioGallery"
                     class="portfolio-lightbox">
                     <img src="assets/img/Certifications/EF SET Certificate 01.jpg" class="img-fluid"
-                      alt="EF SET Certificate"></a>
+                      alt="EF SET Certificate" draggable="false" (dragstart)="false;" class="unselectable"></a>
                 </div>
                 <a href="https://www.efset.org/cert/NQegGa" class="portfolio-wrap-button" title="More details"
                   target="_blank" rel="noopener noreferrer"><span>More details</span></a>
